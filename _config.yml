@@ -15,7 +15,7 @@ rss: /atom.xml
 keywords: ""
 
 # Put your favicon.ico into `hexo-site/themes/hipaper/source/` directory.
-favicon: css/images/favicon.ico
+favicon: favicon.ico
 
 
 # Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
@@ -116,4 +116,4 @@ facebook_sdk:
   webmaster:    #true
 
 # CNZZ count
-cnzz_siteid: 1260716016
+#cnzz_siteid: 1260716016
