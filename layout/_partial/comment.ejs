@@ -1,4 +1,28 @@
-<% if (theme.duoshuo_shortname){ %>
+<% if (theme.gitment.enable && theme.gitment.client_id){ %>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+	<style>
+	.gitment-editor-tab:hover {
+		background: none
+	}
+	</style>
+    <div id="comment"></div>
+	<script type="text/javascript">
+    function renderGitment(){
+      var gitment = new Gitment({
+          id: window.location.pathname,
+          owner: '<%= theme.gitment.github_user %>',
+          repo: '<%= theme.gitment.github_repo %>',
+          oauth: {
+              client_secret:'<%= theme.gitment.client_secret %>',
+              client_id: '<%= theme.gitment.client_id %>'
+          }});
+      gitment.render('comment');
+    }
+    renderGitment();
+    </script>
+<% } else if (theme.duoshuo_shortname) {%>
 	<div id="comment">
 	
 	<!-- 多说评论框 start -->

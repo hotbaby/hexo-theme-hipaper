@@ -73,10 +73,19 @@ search:
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: 
 disqus_shortname: 
-#livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+livere_shortname:
 uyan_uid: 
 wumii: 
-
+gitment:
+    enable: true
+    count: true
+    language:
+    github_user: hotbaby
+    github_repo: blog-comment
+    client_id: 862b359cec66adf51707
+    client_secret: 527e06c77f169bb5847b22681e0cc0f413c1e973
+    proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+    redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 # Code Highlight theme
 # Available value:
