@@ -44,12 +44,12 @@ fancybox: true
 sidebar: right
 widgets:
 - search
-- social
+#- social
 - recent_posts
-- category
-- tag
-- tagcloud
+#- category
 - archive
+- tagcloud
+- tag
 
 # Social Links
 # Key is the name of FontAwsome icon.
